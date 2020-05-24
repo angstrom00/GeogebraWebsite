@@ -13,3 +13,1177 @@
  *= require_tree .
  *= require_self
  */
+/* @import url('https://fonts.googleapis.com/css?family=Kosugi'); */
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+*{box-sizing:border-box}
+
+body {
+    margin: 0;
+    /* background-color: #dee7ec;  */
+    
+    text-size-adjust: 100%;
+    overflow: scroll;
+    min-height: 100%;
+    height:auto;
+    overflow: hidden visible;
+   
+}
+
+.header{
+    /* background-color: rgb(54, 65, 117); */
+    background-color: #28385E;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
+    height:60px;
+    opacity:1;
+    /* -webkit-transition: all .5s ease;
+    transition: all .5s ease; */
+} 
+.header:hover{
+    opacity:1;
+}
+
+.header a{
+    text-decoration:none;
+    display:inline-block;
+    width:100%;
+    height:90%;
+}
+.menu>li>a,.menu>li>a:visited,.menu>li>ul>li>a,.menu>li>ul>li>a:visited{
+    color:#ccc;
+    /* color:#2C7CFF; */
+}
+.menu>li:hover>a,.menu>li>ul>li:hover>a{
+    color:white;
+    /* transition:all .5s ease ; */
+}
+.menu>li:hover>a,.menu>li>ul>li:hover>a{
+    border-bottom:4px solid skyblue;
+}
+
+.header-logo{
+    float:left;
+    font-size:28px;
+    margin:10px 20% 10px 40px;
+    color:white;
+    /* font-family: 'Kosugi', sans-serif; */
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.header-logo>a{
+    color:white;
+}
+.header-logo>a:visited{
+    color:white;
+}
+ul{
+    margin:0;
+}
+
+.header-list li{
+    list-style: none;
+    float: left;
+    font-size: 16px;
+    width:180px;
+    height:60px;
+    text-align:center;
+    line-height:60px;
+    font-weight:bold;
+}
+
+ul.menu-subject{
+    visibility:hidden;
+    opacity:0;
+    z-index:1;
+    padding:0;
+    width:100%;
+}
+
+ul.menu-unit{
+    visibility: hidden;
+    opacity:0;
+}
+/* .menu > li{
+    /* -webkit-transition: all .3s ease;
+    transition:all .3s ease ; 
+} */
+li.menu-database ul.menu-subject{
+    position: absolute;
+    top: 60px;
+    left:0px;
+    box-sizing: border-box;
+    padding: 0px 30%;
+    background-color:#6A91C1;
+    /* background-color: rgb(54, 65, 117); */
+    /* background-color: #000033; */
+    /* background: #072A24; */
+    /* background: linear-gradient(to bottom, rgb(54, 65, 117), #FFF); */
+    /* -webkit-transition: all .3s ease;
+    transition: all .3s ease;  */
+}
+li.menu-database ul.menu-subject ul.menu-unit{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height:180px;
+    /* padding: 0px 2%; */
+    background: #ddd;
+    /* -webkit-transition: all .3s ease .2s;
+    transition: all .3s ease .2s; */
+}
+li.menu-database ul.menu-subject ul.menu-unit a{
+    display: inline-block;
+    width:100%;
+    height:100%;
+}
+
+
+li.menu-database:hover ul.menu-subject,li.menu-database ul.menu-subject li:hover ul.menu-unit{
+    top: 60px;
+    visibility: visible;
+    opacity: 1;
+    /* padding-inline-end: 0px; */
+}
+
+li.menu-database ul.menu-subject > li{
+    float: left;
+    width: 32%;
+    height:60px;
+    /* border: none; */
+}
+li.menu-database ul.menu-subject ul.menu-unit ul{
+    height:50%;
+    /* border-bottom:2px solid white; */
+    /* padding-top: 15px; */
+}
+li.menu-database ul.menu-subject ul.menu-unit ul:first-child{
+    border-bottom:2px groove #eee;
+}
+li.menu-database ul.menu-subject ul.menu-unit ul> li{
+    float: left;
+    width: 11%;
+    /* -webkit-transition: all .3s ease;
+    transition: all .3s ease; */
+}
+li.menu-database ul.menu-subject ul.menu-unit ul> li:first-child{
+    margin:15px 20px 15px 0px;
+    font-size:32px;
+    color:black;
+}
+
+li.menu-database ul.menu-subject ul.menu-unit ul> li:not(:first-child){
+    margin:15px 20px;
+    font-size:12px;
+    border-radius:8px;
+    background-color:white;
+}
+
+li.menu-database ul.menu-subject ul.menu-unit ul> li:not(:first-child):hover{
+    background-color:#2C7CFF;
+}
+
+li.menu-database ul.menu-subject ul.menu-unit ul> li:not(:first-child)>a{
+    color:#2C7CFF;
+}
+li.menu-database ul.menu-subject ul.menu-unit ul> li:not(:first-child):hover>a{
+    color:white;
+}
+
+
+
+.top-wrapper{
+    padding-top: 60px;
+    background: rgba(92,129,202,0.3);
+    background: 
+      -moz-linear-gradient(
+        left, 
+        rgba(92,129,202,0.7) 0%, 
+        rgba(249,140,112,0.7) 100%
+    );
+    background:
+      -webkit-linear-gradient(
+          left, 
+          rgba(92,129,202,0.3) 0%, 
+          rgba(249,140,112,0.3) 100%
+    );
+}
+
+
+.section-title {
+    border-bottom: 2px solid gray;
+    font-size: 32px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.container{
+    margin:0 0 300px 0;
+    padding:0;
+    background-color:snow;
+    border-radius: 20px;
+    z-index:-1;
+}
+.container:nth-child(3){
+    margin :0;
+}
+
+.main-top{
+    max-width: 1140px;
+    margin:100px auto 0;
+    min-height:100%;
+    height:auto;
+    /* background-color:snow; */
+}
+
+.main-visual{
+    padding:50px 50px;
+
+    /* background-color: white; */
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
+    background-image: url(img/3385653.jpg);
+    background-size:cover;
+}
+
+.main-copy{
+    /* margin: 10px;
+    font-size: 100px; */
+    font-size:3em;
+    font-family:Noto Sans JP;
+    text-align:center;
+    color:black;
+}
+.main-explain{
+    /* margin-left:25%; */
+    text-align:center;
+}
+
+.whatsgeo{
+    padding:10px 60px 60px 60px;
+    display:flex;
+}
+
+
+.whatsgeo-txt{
+    padding:30px 40px 0 0;
+    margin: 0 ;
+    width:40%;
+    font-size:1.3em;
+}
+.whatsgeo-txt p{
+    margin:0 0 2em 0;
+}
+
+.whatsgeo-img{
+    padding: 30px 0;
+    margin: 0;
+}
+.intro-geo-exp{
+    display:flex;
+    margin: 0;
+    padding:10px 60px 40px 60px;
+}
+.intro-geo-exp-right{
+    width:40%;
+    margin-left:2em;
+}
+.intro-geo-exp-text p{
+    font-size:16px;
+}
+
+.intro-geo-exp-lec-txt{
+    display:none;
+    opacity:0;
+} 
+
+.intro-geo-exp-text {
+    width:90%;
+    height:50%;
+    position: relative;
+    display: inline-block;
+    margin: 3em 0 4em 15px;
+    padding: 2em 2em;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+    border-radius: 10px;
+}
+
+.intro-geo-exp-text:before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+  
+.intro-geo-exp-text p {
+margin:0 0 1em 0;
+padding: 0;
+}
+
+.active-lec{
+    display:inline;
+    opacity:1;
+    transition: .5s;
+}
+
+.intro-geo-exp-lec-btn {
+    position: absolute;
+    bottom:10px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #00BCD4;
+    background: #fff;
+    transition: .4s;
+  }
+  
+  .intro-geo-exp-lec-btn:hover {
+    background: #00bcd4;
+    color: white;
+  }
+.prev-btn{
+    position:absolute;
+    left:2em;
+    display:none;
+    cursor:pointer;
+}
+.next-btn{
+    position:absolute;
+    right:2em;
+    cursor:pointer;
+}
+
+.intro-geogebra-text>p{
+    font-size:20px;
+    font-family:Noto Sans JP;
+}
+.videos{
+    display:flex;
+    padding:10px 60px 60px 60px;
+}
+.videos-wrapper{
+    padding-bottom:30px;
+    width:60%;
+}
+
+
+.intro-geo-video{
+    margin:0 auto;
+    display:none;
+    cursor: pointer;
+}
+.intro-geo-videoes .active-v{
+    display:block;
+}
+.timebar{
+    z-index:1;
+    position: relative;
+    width: 0;
+    height:5px;
+    /* left:0; */
+    left:5%;
+    background-color: #BAD3FF;
+}
+.dammy{
+    z-index:0;
+    position:relative;
+    top:-5px;
+    /* width:100%; */
+    width:90%;
+    height:5px;
+    background-color:#FFF;
+
+}
+.video-switches{
+    position:relative;
+    top:-5px;
+    /* width:100%; */
+    width:90%;
+    margin:0 auto;
+    /* background-color:#EEE; */
+    background-color:#eee;
+    display:flex;
+    justify-content: center;
+    opacity:0.8;
+}
+.video-switch{
+    margin:10px 10px;
+    cursor: pointer;
+}
+.fa-circle{
+    font-size:0.3em;
+    color:#fff;
+    text-shadow: black 0 0 1px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.fa-circle:hover{
+    font-size:0.8em;
+    color:#BBB;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-shadow:none;
+}
+.video-switches .active-v i{
+    font-size:0.8em;
+    color:black;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-shadow:none;
+}
+
+
+
+.leading{
+    width:40%;
+    padding-left:20px;
+}
+.leading p{
+    font-size:1.3em;
+    margin:0 0 2em 0;
+}
+
+
+
+.contents-heading{
+font-family: 'Alegreya Sans SC', sans-serif;
+font-size:3em;
+margin:0;
+padding:30px 40px;
+position: relative;
+color: #333;
+text-shadow: 0 0 2px white;
+z-index:4;
+}
+.contents-heading:before {
+    content: "";
+    position: absolute;
+    background: #9de5ff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    /* border: dashed 1px white; */
+    left: 30px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+.contents{
+    padding:20px 0;
+}
+
+.contents-item{
+    width:100%;
+    /* float:left; */
+    margin:0 auto;
+    padding:0 3%;
+    text-align: center;
+    opacity:1;
+
+    /* -webkit-transition: all .3s ease;
+    transition: all .3s ease; */
+}
+
+.contents-item:hover{
+    opacity:1;
+    cursor: pointer;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.clear{
+    clear:left;
+}
+
+.database{
+    display:inline-block;
+    background-color:#D9E5FF;
+    border-radius: 40px;
+    transition:.5s;
+    opacity:0.9;
+}
+.database:hover{
+    background-color:#BAD3FF;
+    opacity:1;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.28);
+    transition:.5s;
+}
+.database img{
+    vertical-align:middle;
+    padding:15px 8px 9px 0;
+}
+
+.study{
+    display:inline-block;
+    background-color:#E6FFE9;
+    border-radius: 40px;
+    transition:.5s;
+    opacity:0.9;
+}
+.study:hover{
+    background-color:#CBFFD3;
+    opacity:1;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.28);
+    transition:.5s;
+}
+.study img{
+    vertical-align:middle;
+    padding:15px 8px 9px 0;
+}
+.geogebra{
+    background-color: yellow;
+    height:250px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px gray;
+}
+.link{
+    background-color: orange;
+    height:250px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px gray;
+}
+
+.subject-item{
+    width:300px;
+    margin:0px;
+}
+.subject {
+    float:left;
+    width:23%;
+    height:1000px;
+    margin:0 5% 100px;
+    background-color:#eee;
+    border-radius:10px;
+}
+.subject h2{
+    padding:10px 0px;
+    text-align: center;
+}
+
+.subject-item ul{
+    padding:10px 10px 10px 20px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.subject-item li{
+    list-style: none;
+    margin-bottom:10px;
+    font-size:14px;
+    margin-left:30px;
+    text-decoration: none;
+}
+.subject-item a{
+    text-decoration:none;
+}
+.subject-item li>a:visited{
+    color:#00008b;
+}
+
+.subject-title{
+    background-color:#7B9AD0;
+    border-bottom:4px solid black;
+    margin-top:0;
+    border-radius:10px 10px 0 0;
+    color:white;
+}
+
+
+.subject-title a{
+    color:white;
+    text-decoration:none;
+}
+
+.index{
+    background-color:#fff;
+    border:4px solid #ff9872;
+    width:300px;
+    height:490px;
+    padding:10px 0px;
+    box-shadow: 0px 0px 4px gray;
+
+}
+
+.index ul{
+    color:#444;
+    font-family:"Yu Gothic";
+    font-size:15px;
+    padding:10px 40px 7px 40px;
+    font-weight:bold;
+}
+.index li{
+    list-style:none;
+    font-size:12px;
+    padding:5px 50px;
+}
+
+.unit-title{
+    /* border-bottom:4px solid #8EB8FF; */
+    color:black;
+    font-size:1.2em;
+    display:inline-block;
+    font-weight: lighter;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding:5px 25px;
+    width:100%;
+    text-align: left;
+    margin-bottom:5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    z-index:10;
+    background:#aaa;
+    
+}
+
+.unit hr{
+    margin-top:0;
+    margin-bottom:40px;
+    background-image: -webkit-linear-gradient(left,
+	transparent 0%,#283593 50%,transparent 100%);
+	background-image:         linear-gradient(90deg,
+    #283593 0%,transparent 100%);
+    height: 4px;
+	border-width: 0;
+}
+
+.index li a,.index li a:visited{
+    color:#444;
+}
+.index li a:hover{
+    color:gray;
+    text-decoration: none;
+}
+
+.unit{
+    width: 100%;
+}
+.unit-item{
+    width:70%;
+    margin:0 0 0 15%;
+    display:flex;
+    background-color:whitesmoke;
+    padding:40px 80px;
+    border-radius:32px;
+    margin-bottom:48px;
+    
+}
+.unit-item-caption{
+    width:42%;
+}
+.unit-item-caption img{
+    margin-right:200px;
+}
+.unit-item-title{
+    position:relative;
+    top:-80px;
+    font-family:'Noto Sans JP', sans-serif;
+    display:inline-block;
+    padding:10px 20px;
+    background:#fff8e8;
+    border-left: solid 20px #ffc06e;
+    box-shadow:15px -4px 10px -6px  rgba(0, 0, 0, 0.32);
+}
+.unit-item-texts{
+    width:50%;
+    margin-left:5%;
+}
+.unit-item-texts dl{
+    display:flex;
+    background:white;
+    border-radius:12px;
+}
+.unit-item-texts dl p{
+    font-family:'yu gothic';
+}
+
+.unit-item-texts .unit-item-arttitle{
+    margin-top:62px;
+}
+
+.unit-item-texts dt{
+    width:150px;
+    font-weight:600;
+}
+
+.unit-item-texts dd{
+    margin:0;
+    font-family:'yu gothic'
+}
+
+.comment{
+    padding:0 20px;
+}
+
+
+
+/* -------自学自習ページ--------- */
+/* -----TOP------- */
+.study-top-wrapper{
+    background-color:#f9fbfe;
+    /* background-color:tomato; */
+    padding-top: 60px;
+    padding-bottom: 32px;
+}
+
+.study-top-contents-wrapper{
+    display:flex;
+    margin-bottom:92px;
+}
+.study-top-container:hover{
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.28);
+    transition: .5s;
+}
+.study-top-container{
+    display:inline-block;
+    width:30%;
+    margin: 0 auto;
+    background-color:white;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding:30px 20px 30px 22px;
+    text-decoration: none;
+}
+.study-top-container:visited{
+    color:black;
+}
+.study-top-item-img{
+    width:100%;
+    margin-bottom:2em;
+}
+.study-top-item-txt{
+    /* margin-left:3em; */
+    /* width:60%; */
+    padding:1em 1em 1em 1em;
+    background-color:white;
+}
+.study-top-item-txt p{
+    font-size:1.2em;
+}
+.study-top-item-txt-diff{
+    text-align:center;
+    margin:0;
+}
+
+/* ------レッスン選択画面------  */
+/* .study-beginer-body{
+     background: linear-gradient(-45deg, rgba(246, 255, 0, .4), rgb(245, 178, 35, .4)); 
+} */
+.study-lesson-wrapper{
+    margin:0 auto 2px;
+    width:80%;
+    position:relative;
+}
+.study-lesson-wrapper:last-child{
+    margin-bottom:100px;
+}
+.study-lesson-container{
+    /* display:flex;
+    background:rgba(255,255,255,0.5);
+    border-radius:3px 3px 0 0 ;
+    cursor:pointer;
+    position:relative;
+    */
+    cursor: pointer;
+    transition: all .2s ease-in; 
+    display:flex;
+    padding: 0.5em 1em;
+    margin: 1em 0 0 0;
+    background: #f4f4f4;
+    border-left: solid 6px #5bb7ae;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+.study-lesson-container:hover{
+    /* background-color: white; */
+    background:rgba(255, 214, 100, 0.386);
+}
+
+.fa-shoe-prints{
+    font-size:0.6em;
+    transform:rotate(-60deg);
+    margin:0 5px 0 15px;
+    position:relative;
+    top:-5px;
+}
+.study-lesson-step h2{
+    margin:15px 0;
+    font-family: 'Caveat', cursive;
+}
+
+.study-lesson-img{
+    margin:20px 50px 20px 50px;
+    float:left;
+}
+.study-lesson-text{
+    padding:40px 0;
+}
+.fa-drafting-compass{
+    font-size:0.6em;
+    color:gray;
+
+}
+.study-lesson-text p{
+    margin:0;
+    font-size:1.5em;
+    font-family:'M PLUS Rounded 1c', sans-serif;
+}
+.fa-sort-down{
+    position:relative;
+    left:50%;
+    margin:0 auto;
+    font-size:1.5em;
+    opacity:0.7;
+    z-index:100;
+    transition:.5s ease-in;
+}
+.study-lesson-list{
+    display:none;
+    list-style:none;
+    padding:0;
+}
+.study-lesson-list li{
+    background-color: white;
+    /* padding-left:10%; */
+    opacity:1;
+    border-bottom:1px solid orange;
+}
+.study-lesson-list li p{
+    margin :0;
+    padding :0;
+}
+.study-link{
+    display:block;
+    padding:0 30px;
+    line-height:40px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+.study-link:hover{
+    background:rgba(255, 214, 100, 0.386);
+    transition:.2s ease;
+}
+
+.arrowbar{
+    border-radius:0 0 3px 3px;
+    background-color:#f4f4f4;
+    height:1.2em;
+    display:block;
+    z-index:999;
+}
+.arrow{
+    transform:rotate(225deg);
+    transition:.4s ease-in;
+    position:relative;
+    left:50%;
+    bottom:5px;
+}
+/* -----レッスン画面------ */
+/* ------ ダイアログ------ */
+.lesson-modal-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 101;
+}
+.lesson-modal{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-color: #e6ecf0;
+  padding: 0px 0 40px;
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  /* text-align: center; */
+}
+.lesson-modal-upper{
+    display:flex;
+    background-color:#bbb;
+    border-radius: 10px 10px 0 0;
+}
+.lesson-modal-upper-title{
+    width:97%;
+    text-align:left;
+    margin:0;
+    padding:17px 0 15px 20px;
+    /* background-color:rgba(130, 235, 130,0.5); */
+    border-radius: 10px 0 0 0;
+}
+.lesson-modal-upper-title p{
+    margin:0;
+}
+.lesson-modal-upper-btn{
+    cursor:pointer;
+    margin:5px 20px 5px 0;
+    font-size:2em;
+}
+.lesson-toex-btn{
+    position:absolute;
+    bottom:27px;
+    right:30px;
+    cursor:pointer;
+    display:none;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: 	#00CC33;
+    font-weight:bold;
+    border: solid 3px lightgreen;
+    border-radius: 3px;
+    transition: .4s;
+}
+      
+      .lesson-toex-btn:hover {
+        background: lightgreen;
+        color: white;
+      }
+
+
+
+.lesson-next-btn{
+    position:absolute;
+    bottom:20px;
+    right:40px;
+    cursor:pointer;
+    font-size:2em;
+    color:lightgreen;
+}
+.lesson-prev-btn{
+    position:absolute;
+    bottom:20px;
+    right:140px;
+    cursor:pointer;
+    display:none;
+    font-size:2em;
+    color:lightgreen;
+}
+
+.lesson-modal-student{
+    display:flex;
+    align-items:center;
+    /* display:none; */
+    height:0;
+    opacity:0;
+}
+.lesson-modal-teacher{
+    height:0;
+    opacity:0;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    /* display:none; */
+}
+.lesson-modal-visualmedia{
+    height:100%;
+    margin:0 auto;
+}
+.lesson-modal-visualmedia img{
+    text-align: center;
+}
+.show{
+    display:flex;
+    height:100%;
+    opacity:1;
+}
+
+.lesson-modal-student img,.lesson-modal-teacher img{
+    margin:20px 40px;
+    border-radius:50%;
+}
+.says-student{
+    display: inline-block;
+    position: relative; 
+    margin: 25px 0 25px 80px;
+    padding: 17px 13px;
+    border-radius: 12px;
+    background: #d7ebfe;
+}
+
+.says-student:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px; 
+    left: -24px;
+    border: 12px solid transparent;
+    border-right: 12px solid #d7ebfe;
+}
+
+.lesson-modal-dialog p{
+    font-family:Noto Sans JP;
+    margin: 1em;
+    padding: 0;
+  }
+.important-point{
+    font-size:1.2em;
+}
+.important-point::after {
+    border-bottom: solid 2px #f00;
+    bottom: 0;
+    content: "";
+    display: block;
+    transition: all 3s ease-in;
+    -webkit-transition: all 3s ease-in;
+    width: 0;
+  }
+.show .important-point::after{
+    width:100%;
+}
+
+
+.says-teacher{
+    display: inline-block;
+    position: relative; 
+    margin: 40px 80px 40px 0;
+    padding: 17px 13px;
+    border-radius: 12px;
+    background: #d7ebfe;
+  }
+.says-teacher img{
+    border-radius:0;
+  }
+  
+  .says-teacher:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px; 
+    right: -24px;
+    border: 12px solid transparent;
+    border-left: 12px solid #d7ebfe;
+  }
+/* -------ダイアログここまで------ */
+/* ------レッスン実践画面-------- */
+  .mission-wrapper{
+      margin-top:80px;
+  }
+  .mission-title{
+    font-size:3em;
+    margin:5px 10%;
+  }
+  .mission-explain{
+    margin:2px 10%;
+  }
+  .mission-practice{
+      display:flex;
+      /* justify-content: center; */
+      align-items: center;
+  }
+  .mission-geogebra{
+    width:750px;
+    height:450px;  
+    margin:0 auto;
+    padding:30px;
+    justify-content:space-between;
+  }
+  .fa-lightbulb{
+      margin-right:4px;
+      color:orange;
+  }
+  .mission-hint{
+      margin-top:5px;
+      cursor:pointer;
+      width:150px;
+  }
+  .prev-lesson-btn{
+    display:inline-block;
+    width:80px;
+    height:80px;
+    margin-left:30px;
+    background-color:#8CD790;
+    text-align: center;
+    border-radius:50%;
+    text-decoration: none;
+    transition: .5s;
+    opacity:0.6;
+  }
+  .next-lesson-btn{
+    display:inline-block;
+    width:80px;
+    height:80px;
+    margin-right:30px;
+    background-color:#8CD790;
+    text-align: center;
+    border-radius:50%;
+    text-decoration: none;
+    transition: .5s;
+    opacity:0.6;
+}
+  .next-lesson-btn:hover,.prev-lesson-btn:hover{
+    transform: translateY(-5px);
+    /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.28); */
+    transition: .5s;
+    opacity:1.0;
+}
+
+.next-lesson-btn p,.prev-lesson-btn p{
+    margin:20% 0;
+    font-weight:bold;
+    font-family:'M PLUS 1p', sans-serif;
+    color:#fff;
+  }
+  
+
+
+.fa-angle-up{
+    color:blue;
+    font-size:3em;
+    opacity:0.5;
+    position:fixed;
+    bottom:30px;
+    right:80px;
+    width:48px;
+    border-radius:50%;
+    background-color: white;
+    text-align:center;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.fa-angle-up:hover{
+    opacity:1;
+}
+.fa-angle-down{
+    font-size:1.5em;
+    margin-left:9px;
+    position:fixed;
+    top:16px;
+}
+.fa-shapes,.fa-user{
+    color:orange;
+    margin:0 10px;
+}
+
+
+.top-dummy{
+    height:300px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #174a5c;
+    color: white;
+    text-align: center;
+}
+ul.footer-menu li {
+display: inline;
+}

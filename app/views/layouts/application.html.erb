@@ -1,91 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>TweetApp</title>
-  <%= csrf_meta_tags %>
+  <head>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-</head>
+    <meta charset="utf-8">
+        <title>高校数学のGeoGebra教材</title>
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
   <body>
-    <div class="header">
-<div class="header-logo"><a href="index.html">高校数学のGeoGebra教材</a></div>
-<div class="header-list">
-    <ul class="menu">  <!--width100%-->
-        <li><a href="geogebra.html">GeoGebraとは</a></li>
-        <li class="menu-database">
-            <a href="database.html" class="init-bottom">教材集</a>
-            <ul class="menu-subject">
-                <li>
-                    <a href="#" class="1a">数学Ⅰ・A</a>
-                    <ul class="menu-unit">
-                        <ul>
-                            <li>数学Ⅰ</li>
-                            <li><a href="math1.html#111">数と式</a></li>
-                            <li><a href="math1.html#121">集合と命題</a></li>
-                            <li><a href="math1.html#131">2次関数</a></li>
-                            <li><a href="math1.html#141">図形と計量</a></li>
-                            <li><a href="math1.html#151">データの分析</a></li>
-                        </ul>
-                        <ul>
-                            <li>数学A</li>
-                            <li><a href="matha.html#211">場合の数と確率</a></li>
-                            <li><a href="matha.html#221">図形の性質</a></li>
-                            <li><a href="matha.html#231">整数の性質</a></li>
-                        </ul>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="2b">数学Ⅱ・B</a>
-                    <ul class="menu-unit">
-                        <ul>
-                            <li>数学Ⅱ</li>
-                            <li><a href="#">式と証明</a>            
-                                <li><a href="#">複素数と方程式</a>            
-                                    <li><a href="#">図形と方程式</a>            
-                                        <li><a href="#">三角関数</a>            
-                                            <li><a href="#">指数関数と対数関数</a>            
-                                                <li><a href="#">微分法と積分法</a>
-                                                </ul>       
-                                                <ul>
-                                                    <li>数学B</li>
-                                                    <li><a href="#">平面上のベクトル</a>            
-                                                        <li><a href="#">空間のベクトル</a>            
-                                                            <li><a href="#">数列</a>            
-                                                                <li><a href="#">確率分布と統計的な推測</a>            
-                                                                </ul>       
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="2b">数学Ⅲ</a>
-                        <ul class="menu-unit">
-                            <ul>
-                                <li></li>
-                                <li><a href="#">複素数平面</a></li>
-                                <li><a href="#">式と曲線</a></li>
-                                <li><a href="#">関数</a></li>
-                                <li><a href="#">極限</a></li>
-                                <li><a href="#">微分法</a></li>
-                                <li><a href="#">微分法の応用</a></li>
-                                <li><a href="#">積分法</a></li>
-                                <li><a href="#">積分法の応用</a></li>
+  <div class="header">
+            <div class="header-logo"><a href="index.html">高校数学のGeoGebra教材</a></div>
+            <div class="header-list">
+                <ul class="menu">  <!--width100%-->
+                    <li><a href="geogebra.html">GeoGebraとは</a></li>
+                    <li class="menu-database">
+                        <a href="database.html" class="init-bottom">教材集</a>
+                        <ul class="menu-subject">
+                            <li>
+                                <a href="#" class="1a">数学Ⅰ・A</a>
+                                <ul class="menu-unit">
+                                    <ul>
+                                        <li>数学Ⅰ</li>
+                                        <li><a href="math1.html#111">数と式</a></li>
+                                        <li><a href="math1.html#121">集合と命題</a></li>
+                                        <li><a href="math1.html#131">2次関数</a></li>
+                                        <li><a href="math1.html#141">図形と計量</a></li>
+                                        <li><a href="math1.html#151">データの分析</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>数学A</li>
+                                        <li><a href="matha.html#211">場合の数と確率</a></li>
+                                        <li><a href="matha.html#221">図形の性質</a></li>
+                                        <li><a href="matha.html#231">整数の性質</a></li>
+                                    </ul>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="2b">数学Ⅱ・B</a>
+                                <ul class="menu-unit">
+                                    <ul>
+                                        <li>数学Ⅱ</li>
+                                        <li><a href="#">式と証明</a>            
+                                            <li><a href="#">複素数と方程式</a>            
+                                                <li><a href="#">図形と方程式</a>            
+                                                    <li><a href="#">三角関数</a>            
+                                                        <li><a href="#">指数関数と対数関数</a>            
+                                                            <li><a href="#">微分法と積分法</a>
+                                                            </ul>       
+                                                            <ul>
+                                                                <li>数学B</li>
+                                                                <li><a href="#">平面上のベクトル</a>            
+                                                                    <li><a href="#">空間のベクトル</a>            
+                                                                        <li><a href="#">数列</a>            
+                                                                            <li><a href="#">確率分布と統計的な推測</a>            
+                                                                            </ul>       
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" class="2b">数学Ⅲ</a>
+                                    <ul class="menu-unit">
+                                        <ul>
+                                            <li></li>
+                                            <li><a href="#">複素数平面</a></li>
+                                            <li><a href="#">式と曲線</a></li>
+                                            <li><a href="#">関数</a></li>
+                                            <li><a href="#">極限</a></li>
+                                            <li><a href="#">微分法</a></li>
+                                            <li><a href="#">微分法の応用</a></li>
+                                            <li><a href="#">積分法</a></li>
+                                            <li><a href="#">積分法の応用</a></li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                
                             </ul>
-                        </ul>
-                    </li>
-                    
-                </ul>
-            </li>
-            <li><a href="study-top.html">教材作成</a></li>
-            <li><a href="link.html">リンク集</a></li>
-        </ul>
-</div>
-</div>
-
+                        </li>
+                        <li><a href="study-top.html">教材作成</a></li>
+                        <li><a href="link.html">リンク集</a></li>
+                    </ul>
+            </div>
+        </div>
 
     <%= yield %>
 
@@ -97,7 +98,12 @@
          <li>Contact Us</li>
         </ul>
         <p>© All rights reserved by これはダミーです。 </p>
-    </footer>
+      </footer>
+
+
+
+
+
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
@@ -106,5 +112,6 @@
     </script>
       
     <script src="script.js"></script>
+    </body>
   </body>
 </html>

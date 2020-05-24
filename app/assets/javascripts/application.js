@@ -277,4 +277,3 @@ $('.timebar').animate(
 
 });
     
-    
