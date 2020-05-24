@@ -22139,3 +22139,268 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-05-24 18:03:19 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 299ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/00xxr/geogebra_website/app/assets/config
+  C:/Users/00xxr/geogebra_website/app/assets/images
+  C:/Users/00xxr/geogebra_website/app/assets/javascripts
+  C:/Users/00xxr/geogebra_website/app/assets/stylesheets
+  C:/Users/00xxr/geogebra_website/app/assets/videos
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actioncable-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activestorage-5.2.4.3/app/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionview-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/00xxr/geogebra_website/node_modules):
+    10:         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    11:         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    12:         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1002959808_72955500'
+Started GET "/" for ::1 at 2020-05-24 18:03:23 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/00xxr/geogebra_website/app/assets/config
+  C:/Users/00xxr/geogebra_website/app/assets/images
+  C:/Users/00xxr/geogebra_website/app/assets/javascripts
+  C:/Users/00xxr/geogebra_website/app/assets/stylesheets
+  C:/Users/00xxr/geogebra_website/app/assets/videos
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actioncable-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activestorage-5.2.4.3/app/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionview-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/00xxr/geogebra_website/node_modules):
+    10:         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    11:         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    12:         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1002959808_104978420'
+Started GET "/" for ::1 at 2020-05-24 18:03:51 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/00xxr/geogebra_website/app/assets/config
+  C:/Users/00xxr/geogebra_website/app/assets/images
+  C:/Users/00xxr/geogebra_website/app/assets/javascripts
+  C:/Users/00xxr/geogebra_website/app/assets/stylesheets
+  C:/Users/00xxr/geogebra_website/app/assets/videos
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actioncable-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activestorage-5.2.4.3/app/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionview-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/00xxr/geogebra_website/node_modules):
+    10:         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    11:         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    12:         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1002959808_118820860'
+Started GET "/" for ::1 at 2020-05-24 18:03:53 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/00xxr/geogebra_website/app/assets/config
+  C:/Users/00xxr/geogebra_website/app/assets/images
+  C:/Users/00xxr/geogebra_website/app/assets/javascripts
+  C:/Users/00xxr/geogebra_website/app/assets/stylesheets
+  C:/Users/00xxr/geogebra_website/app/assets/videos
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actioncable-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activestorage-5.2.4.3/app/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionview-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/00xxr/geogebra_website/node_modules):
+    10:         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    11:         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    12:         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1002959808_112917520'
+Started GET "/" for ::1 at 2020-05-24 18:03:55 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/00xxr/geogebra_website/app/assets/config
+  C:/Users/00xxr/geogebra_website/app/assets/images
+  C:/Users/00xxr/geogebra_website/app/assets/javascripts
+  C:/Users/00xxr/geogebra_website/app/assets/stylesheets
+  C:/Users/00xxr/geogebra_website/app/assets/videos
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actioncable-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activestorage-5.2.4.3/app/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionview-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/00xxr/geogebra_website/node_modules):
+    10:         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    11:         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    12:         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1002959808_117247300'
+Started GET "/" for ::1 at 2020-05-24 18:04:06 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-sprockets' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/00xxr/geogebra_website/app/assets/config
+  C:/Users/00xxr/geogebra_website/app/assets/images
+  C:/Users/00xxr/geogebra_website/app/assets/javascripts
+  C:/Users/00xxr/geogebra_website/app/assets/stylesheets
+  C:/Users/00xxr/geogebra_website/app/assets/videos
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actioncable-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activestorage-5.2.4.3/app/assets/javascripts
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionview-5.2.4.3/lib/assets/compiled
+  C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/00xxr/geogebra_website/node_modules):
+    10:         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    11:         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    12:         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    13:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    15:   </head>
+    16: 
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__1002959808_104698020'
+Started GET "/" for ::1 at 2020-05-24 18:04:20 +0900
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 287ms (Views: 285.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/script.js" for ::1 at 2020-05-24 18:04:21 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/script.js"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/3385653.jpg"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.4.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.3) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.4.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.3) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
