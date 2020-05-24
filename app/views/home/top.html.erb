@@ -1,0 +1,141 @@
+<div class="top-wrapper">
+<div class="main-visual">  
+<h1 class="main-copy">高校数学のGeoGebra教材</h1> 
+<p class="main-explain">このサイトは高校数学の教員のためにGeoGebra教材を使ってもらうためのお手伝いをします</p> 
+<p class="main-explain">教材集のページでは、Web上にあるGeoGebra教材を学習指導要領に基づいた単元別に掲載しています</p> 
+<p class="main-explain">教材作成のページでは、一つの教材を作成する中でGeoGebra教材作成に必要な要素をスモールステップで学ぶことができます</p> 
+<p class="main-explain">GeoGebraについてわからない方のためにこのページでGeoGebraがどういったものかをざっくり紹介しています</p> 
+
+</div>
+<!-- <a href="https://jp.freepik.com/free-photos-vectors/frame">Freepik - jp.freepik.com によって作成された frame 写真</a> -->
+<div class="main-top">
+<div class="contents-wrapper">
+
+    <div class="container">
+        <h1 class="contents-heading">What's GeoGebra?</h1>
+        <div class="whatsgeo">
+            <div class="whatsgeo-txt">
+                <p>GeoGebraは、幾何・代数・表計算・グラフ・統計・解析をひとつの使いやすいパッケージにした、教育のすべての段階のための動的数学ソフトウェアです。
+                </p>
+                <p>
+                    PCやスマートフォン、タブレット端末と様々なデバイスのほか,GoogleChoromeやSafariなどのブラウザ上で動作するものもあります。
+                </p>
+            </div>
+            <%= image_tag 'the-device-family.jpg',:width => '60%' %>
+            <%# <img class="whatsgeo-img" src="app/assets/images/the-device-family.jpg" width="60%">          %>
+        </div>
+    </div>
+            
+    <div class="container">
+        <h1 class="contents-heading">Database</h1>
+        <div class="videos">
+
+            <div class="videos-wrapper">
+                <div class="intro-geo-videoes">
+                    <%= video_tag("/videos/intro-geo-1.mp4", class: 'intro-geo-video active-v', :autoplay => true, :loop => true, :muted => true, :width => '90%') %>
+                    <%= video_tag("/videos/intro-geo-2.mp4", class: 'intro-geo-video', :autoplay => true, :loop => true, :muted => true, :width => '90%') %>
+                    <%= video_tag("/videos/intro-geo-3.mp4", class: 'intro-geo-video', :autoplay => true, :loop => true, :muted => true, :width => '90%') %>
+                    <%= video_tag("/videos/intro-geo-4.mp4", class: 'intro-geo-video', :autoplay => true, :loop => true, :muted => true, :width => '90%') %>
+                    <%= video_tag("/videos/intro-geo-5.mp4", class: 'intro-geo-video', :autoplay => true, :loop => true, :muted => true, :width => '90%') %>
+                </div>
+                <div class="timebar"></div>
+                <div class="dammy"></div>
+                <div class="video-switches">
+                    <div class="video-switch active-v"><i class="fas fa-circle"></i></div>
+                    <div class="video-switch"><i class="fas fa-circle"></i></div>
+                    <div class="video-switch"><i class="fas fa-circle"></i></div>
+                    <div class="video-switch"><i class="fas fa-circle"></i></div>
+                    <div class="video-switch"><i class="fas fa-circle"></i></div>
+                </div>
+            </div>
+            <div class="leading">
+                <p>
+                    GeoGebraに搭載されている機能をうまく駆使することで様々な教材を作成することができます。
+                </p>
+                <p>
+                    教材集のページでは、他の人達が作った教材を高等学校の学習指導要領に沿って単元別に掲載しています。
+                </p>
+                <div class="contents-item">
+                    <%= link_%>
+                    <a class="database" href="database.html">
+                        <%= image_tag '教材集ボタン.png',:width => '70%' %>
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="contents-heading">Let's try!</h1>
+        <div class="intro-geo-exp">
+            <iframe scrolling="no" title="白紙" src="https://www.geogebra.org/material/iframe/id/wgump33z/width/681/height/497/border/888888/sfsb/true/smb/false/stb/true/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false" width="681px" height="497px" style="border:0px;"> </iframe>
+
+            <div class="intro-geo-exp-right">
+
+                <div class="intro-geo-exp-text">
+                    <div class="intro-geo-exp-lec-txt active-lec">
+                        <p>これがGeoGebraの編集画面です。</p>
+                        <p>
+                            上部のツールバーにある<%= image_tag '点アイコン.png',:width => '20px' %>のアイコンをクリックして <%= image_tag '点アイコン.png',:width => '20px' %>点 を選んでみましょう。
+                        </p>
+                    </div>
+                    <div class="intro-geo-exp-lec-txt">
+                        <p>画面上の適当なところをクリックして、点を作図してみましょう。</p>
+                        <p><%= image_tag 'カーソルアイコン.png',:width => '20px' %>アイコンをクリックして <%= image_tag 'カーソルアイコン.png',:width => '20px' %>移動 を選択してから作図した点をドラッグすると動かすことができます。</p>
+                    </div> 
+                    <div class="intro-geo-exp-lec-txt">
+                        <p>どのように動いたでしょうか</p>
+                        <p>すでにある直線上に点を作図した場合、その直線上しか動くことのできない点が作図され、そうでない場合、平面を自由に動くことのできる点が作図されるはずです。</p>
+                    </div>
+                    <div class="intro-geo-exp-lec-txt">
+                        <p>また、オブジェクト（作図された点や線など）を右クリックするとそのオブジェクトに対するメニューが表示され、ラベルを付けたり、残像を表示させたり、削除したりすることができます。</p>
+                    </div>
+                    <div class="intro-geo-exp-lec-txt">
+                        <p>ツールバーには様々な作図ツールが揃っています。</p>
+                        <p>感覚的に操作しやすいものもたくさんあるので、色々触ってみてどんな機能があるのか確認してみましょう。</p>
+                    </div>
+                    <!-- <div class="intro-geo-exp-lec-btn prev-btn">前へ</div> -->
+                    <div class="intro-geo-exp-lec-btn prev-btn">
+                        <i class="fa fa-caret-left"></i> 前へ 
+                    </div>
+                    <div class="intro-geo-exp-lec-btn next-btn">
+                        次へ <i class="fa fa-caret-right"></i>
+                    </div>
+                </div>
+                <div class="contents-item">
+                    <a class="study" href="study-top.html">
+                        <%= image_tag '自学自習ボタン.png',:width => '70%' %>
+                        <%# <img src="img/自学自習ボタン.png" width="85%"  alt="study"> %>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="top-dummy"></div>
+        
+        
+        
+        
+         <!-- <div class="container">
+            <div class="contents">
+                <div class="contents-item">
+                    <a href="geogebra.html">
+                        <img src="img/geogebra.png" width="200px" alt="geogebra">
+                    </a>
+                </div> 
+                <div class="contents-item">
+                    <div class="study">
+                        <img src="img/study.png" width="33%"  alt="study">
+                    </div>
+                </div>
+                <div class="contents-item">
+                    <div class="link">
+                        <img src="img/link.png" width="200px" alt="link">
+                    </div>
+                </div> 
+            </div>
+         </div> -->
+</div>
+</div>
+</div>
