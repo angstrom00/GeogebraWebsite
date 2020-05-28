@@ -4,4 +4,8 @@ class StudyController < ApplicationController
 
   def beginner
   end
+
+  def lesson
+    
+  end
 end
