@@ -624,7 +624,7 @@ z-index:4;
     width:270px;
     height:520px;
     padding:10px 0px;
-    box-shadow: 0px 0px 4px gray;
+    /* box-shadow: 0px 0px 4px gray; */
     position:fixed;
     top:100px;
     right:20px;
