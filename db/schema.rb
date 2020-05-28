@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_05_26_022012) do
 
-  create_table "units", force: :cascade do |t|
+  create_table "units", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "subject"
     t.string "chapter"
     t.string "section"
