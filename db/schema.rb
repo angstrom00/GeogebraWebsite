@@ -10,20 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_26_022012) do
+ActiveRecord::Schema.define(version: 2020_05_29_001600) do
 
-  create_table "units", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "sections", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "subject"
     t.string "chapter"
     t.string "section"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "units", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "section_no"
     t.string "title"
     t.string "auther"
     t.string "url"
     t.string "comment"
     t.string "image"
-    t.string "string"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

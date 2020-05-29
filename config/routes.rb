@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'home/top'
   get 'top' => "home#top"
   get "database/index" => "database#index"
-  get "database/math-1" => "database#math-1"
+  get "database/math_1" => "database#math_1"
   get "study/index" => "study#index"
   get "study/beginner" => "study#beginner"
   get "study/beginner/111" => "study#111"

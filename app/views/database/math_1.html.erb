@@ -1,0 +1,110 @@
+<main>
+            <div class="database-link-wrapper">
+                <%# <a id="top"></a><h1 class="section-title">数と式</h1> %>
+                <div class="database-link-container">
+
+                        <div class="index">
+                            <ul>数と式</ul>
+                                <li><a href="#111">式と計算</a></li>
+                                <li><a href="#112">実数</a></li>
+                                <li><a href="#113">一次不等式</a></li>
+                            <ul>集合と命題</ul>
+                                <li><a href="#121">集合と命題</a></li>
+                            <ul>2次関数</ul>
+                            <li><a href="#131">2次関数とグラフ</a></li>
+                                <li><a href="#132">2次関数の値の変化</a></li>
+                                <li><a href="#133">2次方程式と2次不等式</a></li>
+                            <ul>図形と計量</ul>
+                                <li><a href="#141">三角比</a></li>
+                                <li><a href="#142">三角比への応用</a></li>
+                            <ul>データの分析</ul>
+                                <li><a href="#151">データの分析</a></li>
+                        </div>
+                        <div class="unit-container">
+                    
+                        <% x=0 %>    
+                        <% @unit.each do |unit| %>
+                            <% can=false %>
+                            <% if x!=unit.section_no then %>
+                                <% can=true %>
+                                <div class="unit">
+                                <a id="<%= @section[unit.section_no-1].id %>"></a><h2 class="unit-title"><%= @section[unit.section_no-1].section %></h2> 
+                            <% end %>
+                            <% x=unit.section_no%>
+                            <div id="#"class="unit-item">
+                                <div class="unit-item-caption">
+                                    <% if unit.image[1]=='v' then%>
+                                        <video src="<%= unit.image %>" width="300px" controls></video>
+                                    <% else %>
+                                        <img src="<%= unit.image %>" width="300px">
+                                    <% end %>
+                                    <p><a href="<%= unit.url %>" target="_brank"><%= unit.url %></a></p>
+                                </div>
+                                <div class="unit-item-texts">
+                                    <dl class="unit-item-arttitle">
+                                        <dt><i class="fas fa-shapes"></i>作品タイトル:</dt>
+                                        <dd><%= unit.title %></dd>
+                                    </dl>
+                                    <dl class="author">
+                                        <dt><i class="fas fa-user"></i>作成者:</dt>
+                                        <dd><%= unit.author %></dd>
+                                    </dl>
+                                    <dl class="comment">
+                                        <p><%= unit.comment%></p>
+                                    </dl>
+                                </div>
+                            </div>
+                            <% if can then%>
+                            </div>
+                            <% end %>
+                        <% end %>
+
+                            <%# <div id="1112"class="unit-item">
+                                <div class="unit-item-caption">
+                                    <img src="/images/1112.png" width="300px">
+                                    <p><a href="https://www.geogebra.org/m/KRfxg4Bu" target="_brank">https://www.geogebra.org/m/KRfxg4Bu</a></p>
+                                </div>
+                                <div class="unit-item-texts">
+                                    <dl class="unit-item-arttitle">
+                                        <dt><i class="fas fa-shapes"></i>作品タイトル:</dt>
+                                        <dd>因数分解</dd>
+                                    </dl>
+                                    <dl class="author">
+                                        <dt><i class="fas fa-user"></i>作成者:</dt>
+                                        <dd>Kazushi AHARA</dd>
+                                    </dl>
+                                    <dl class="comment">
+                                        <p>基本的な二次式の因数分解をします。</p>
+                                    </dl>
+                                </div>
+                            </div> %>
+                        <%# </div> %>
+                       
+
+                            
+                 
+                        <div class="unit">
+                        <a id="121"></a><p class="unit-title">集合と命題</p>
+                        </div>
+                        <div class="unit">
+                        <a id="131"></a><p class="unit-title">2次関数とグラフ</p>
+                        </div>
+                        <div class="unit">
+                        <a id="132"></a><p class="unit-title">2次関数の値の変化</p>
+                        </div>
+                        <div class="unit">
+                        <a id="133"></a><p class="unit-title">2次関数と2次不等式</p>
+                        </div>
+                        <div class="unit">
+                        <a id="141"></a><p class="unit-title">三角比</p>
+                        </div>
+                        <div class="unit">
+                        <a id="142"></a><p class="unit-title">三角比への応用</p>
+                        </div>
+                        <div class="unit">
+                        <a id="151"></a><p class="unit-title">データの分析</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </main>
