@@ -6,5 +6,4 @@ class DatabaseController < ApplicationController
     @unit= Unit.all
     @section = Section.all
   end
-
 end
