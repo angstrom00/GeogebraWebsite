@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_05_29_001600) do
   create_table "units", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "section_no"
     t.string "title"
-    t.string "auther"
+    t.string "author"
     t.string "url"
     t.string "comment"
     t.string "image"
