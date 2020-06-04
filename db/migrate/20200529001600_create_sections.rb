@@ -5,7 +5,6 @@ class CreateSections < ActiveRecord::Migration[5.2]
       t.string :chapter
       t.string :section
 
-      t.timestamps
     end
   end
 end
