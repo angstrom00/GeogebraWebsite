@@ -40,8 +40,8 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: geogebra_website_production
+  database: heroku_fa8c7ee27128862
   pool: 5
-  username: root
-  password: X12mtqi0
-  host: 127.0.0.1
+  username: ba8cd2777a167e
+  password: acdb6dce
+  host: us-cdbr-east-05.cleardb.net
