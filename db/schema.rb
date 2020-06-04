@@ -16,8 +16,6 @@ ActiveRecord::Schema.define(version: 2020_05_29_001600) do
     t.string "subject"
     t.string "chapter"
     t.string "section"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "units", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
