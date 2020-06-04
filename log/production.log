@@ -1,0 +1,22 @@
+D, [2020-06-04T17:09:33.354920 #3696] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2020-06-04T17:09:33.363413 #3696] DEBUG -- :   [1m[35m (7.1ms)[0m  [1m[35mCREATE DATABASE `geogebra_website_production` DEFAULT CHARACTER SET `utf8`[0m
+D, [2020-06-04T17:21:11.794937 #8500] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2020-06-04T17:21:11.890066 #8500] DEBUG -- :   [1m[35m (25.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+D, [2020-06-04T17:21:11.907704 #8500] DEBUG -- :   [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+D, [2020-06-04T17:21:11.909139 #8500] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('509890790087119875', 0)[0m
+D, [2020-06-04T17:21:11.937043 #8500] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+I, [2020-06-04T17:21:11.939912 #8500]  INFO -- : Migrating to CreateUnits (20200526022012)
+D, [2020-06-04T17:21:11.958166 #8500] DEBUG -- :   [1m[35m (13.0ms)[0m  [1m[35mCREATE TABLE `units` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `subject` varchar(255), `chapter` varchar(255), `section` varchar(255), `title` varchar(255), `auther` varchar(255), `url` varchar(255), `comment` varchar(255), `image` varchar(255), `string` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+D, [2020-06-04T17:21:11.964597 #8500] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-06-04T17:21:11.966898 #8500] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200526022012')[0m
+D, [2020-06-04T17:21:11.968605 #8500] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+I, [2020-06-04T17:21:11.968762 #8500]  INFO -- : Migrating to CreateSections (20200529001600)
+D, [2020-06-04T17:21:11.986666 #8500] DEBUG -- :   [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE `sections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `subject` varchar(255), `chapter` varchar(255), `section` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+D, [2020-06-04T17:21:11.988600 #8500] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-06-04T17:21:11.989949 #8500] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200529001600')[0m
+D, [2020-06-04T17:21:11.993295 #8500] DEBUG -- :   [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-06-04T17:21:12.002229 #8500] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2020-06-04T17:21:12.009236 #8500] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-06-04T17:21:12.013639 #8500] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Create (1.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'production', '2020-06-04 08:21:12', '2020-06-04 08:21:12')[0m
+D, [2020-06-04T17:21:12.025462 #8500] DEBUG -- :   [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-06-04T17:21:12.026892 #8500] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[34mSELECT RELEASE_LOCK('509890790087119875')[0m
