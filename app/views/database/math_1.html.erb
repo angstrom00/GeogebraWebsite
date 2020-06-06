@@ -38,7 +38,10 @@
                             <% if unit.image[1]=='v' then%>
                                 <video src="<%= unit.image %>" width="300px" controls></video>
                             <% else %>
-                                <img src="<%= unit.image %>" width="300px">
+                                <%= image_tag "#{unit.image}",width:"300px" %>
+ 
+                                <%# <img src=" unit.image " width="300px"> %>
+
                             <% end %>
                             <p><a href="<%= unit.url %>" target="_brank"><%= unit.url %></a></p>
                         </div>
