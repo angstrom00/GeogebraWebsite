@@ -15,5 +15,11 @@ Rails.application.routes.draw do
   get "study/beginner/132" => "study#132"
   get "study/beginner/133" => "study#133"
   get "study/beginner/134" => "study#134"
+  get "study/beginner/135" => "study#135"
+  get "study/beginner/136" => "study#136"
+  get "study/beginner/137" => "study#137"
+  get "study/beginner/138" => "study#138"
+  get "study/beginner/141" => "study#141"
+  get "study/beginner/142" => "study#142"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
