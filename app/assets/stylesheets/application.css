@@ -925,6 +925,16 @@ z-index:4;
 }
 /* -----レッスン画面------ */
 /* ------ ダイアログ------ */
+.lesson-modal-sample-wrapper{
+    position: fixed;
+    display:none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
 .lesson-modal-wrapper{
     position: fixed;
     top: 0;
@@ -934,7 +944,7 @@ z-index:4;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 101;
 }
-.lesson-modal{
+.lesson-modal,.lesson-modal-sample{
   position: absolute;
   top: 10%;
   left: 10%;
@@ -962,10 +972,18 @@ z-index:4;
     margin:0;
 }
 .lesson-modal-upper-btn{
+    position: absolute;
+    right:0px;
     cursor:pointer;
     margin:5px 20px 5px 0;
     font-size:2em;
 }
+
+.lesson-modal-sample-geo{
+    margin:5.5em auto;
+    width:700px;
+}
+
 .lesson-toex-btn{
     position:absolute;
     bottom:27px;
@@ -1104,9 +1122,10 @@ z-index:4;
 /* ------レッスン実践画面-------- */
   .mission-wrapper{
       margin-top:80px;
+      
   }
   .mission-title{
-    font-size:3em;
+    font-size:2em;
     margin:5px 10%;
   }
   .mission-explain{
@@ -1119,20 +1138,65 @@ z-index:4;
       margin-bottom:100px;
   }
   .mission-geogebra{
-    width:750px;
-    height:450px;  
+    display:flex;
+    /* width:750px; */
+    /* height:450px;   */
     margin:0 auto;
     padding:30px;
     justify-content:space-between;
   }
   .fa-lightbulb{
-      margin-right:4px;
       color:orange;
   }
+  .fa-flag{
+      color:orange;
+  }
+  
   .mission-hint{
+      /* display:flex; */
+      flex-direction:row-reverse;
       margin-top:5px;
       cursor:pointer;
-      width:150px;
+  }
+  .mission-hint-howto,.mission-hint-sample{
+      margin-left:1em;
+      margin-bottom:3em;
+      background-color:#fff;
+      text-align: center;
+        position: relative;
+        /* display: inline-block; */
+        font-weight: bold;
+        padding: 1em 0;
+        text-decoration: none;
+        /* color: #67c5ff;   */
+        /* color: orange;   */
+  }
+      .mission-hint-howto:before,.mission-hint-sample:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 4px;
+        top:100%;
+        left: 0;
+        border-radius: 3px;
+        /* background:#67c5ff; */
+        background:orange;
+        transition: .2s;
+      }
+
+      .mission-hint-howto:hover:before,.mission-hint-sample:hover:before {
+        top: -webkit-calc(100% - 3px);
+        top: calc(100% - 3px);
+      }
+
+.mission-hint-icon{
+      font-size:2em;
+      text-align:center;
+      margin:0.5em 0;
+  }
+  .mission-hint-text{
+      margin:0;
+      font-size: 0.8em;
   }
   .prev-lesson-btn{
     display:inline-block;

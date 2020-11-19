@@ -166,6 +166,7 @@ $('.timebar').animate(
     //-----------Studyレッスン選択画面アコーディオンここまで----------------
 
     //-----------LessonModalダイアログ送りUI----------------------------------
+
     $('.lesson-modal-btn').click(function(){
         var $displaySlideF = $('.show').eq(0);
         var $displaySlideS = $('.show').eq(1);
@@ -266,12 +267,14 @@ $('.timebar').animate(
     });
 
     $('.lesson-modal-close-btn').click(function(){
-        $('.lesson-modal-wrapper').fadeOut();
+        $('.lesson-modal-wrapper,.lesson-modal-sample-wrapper').fadeOut();
     });
 
-    $('.mission-hint').click(function(){
+    $('.mission-hint-howto').click(function(){
         $('.lesson-modal-wrapper').fadeIn();
+    });
+    $('.mission-hint-sample').click(function(){
+        $('.lesson-modal-sample-wrapper').fadeIn();
     });
 
 });
-    
