@@ -95,7 +95,7 @@ $(function(){
                     $('.active-v').get(0).currentTime=0;
                     clearInterval(vInterval);
                     slideInterval(4500);
-                });
+            });
                 
                 // $('.intro-geo-video').click(function(){
                     //     var slideIndex=$('.intro-geo-video').index($(this));
@@ -163,7 +163,23 @@ $('.timebar').animate(
             $(this).parent().find('.arrow').css({'transform':'rotate(45deg)','bottom':'-6px'});
         }
     });
+    $('.study-lesson-list').slideDown();
     //-----------Studyレッスン選択画面アコーディオンここまで----------------
+
+    //-----------StudyTop動画------------ 
+    $(document).on({
+        mouseenter:function(){
+            $(this).addClass('on');
+            $(this).find('.study-top-v')[0].currentTime = $(this).find('.study-top-v')[0].initialTime || 0;
+            $(this).find('.study-top-v')[0].play();
+        },
+        mouseleave:function(){
+            $(this).removeClass('on');
+            $(this).find('.study-top-v')[0].pause();
+        }
+    },'.study-top-container');
+    
+    //-----------StudyTop動画ここまで------------ 
 
     //-----------LessonModalダイアログ送りUI----------------------------------
 

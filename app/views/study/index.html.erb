@@ -2,26 +2,35 @@
             <div class="study-top-wrapper">
                 <div class="main-top">
                     <div class="study-top-contents-wrapper">
-                        <a class="study-top-container" href="/study/beginner">
+                        <a class="study-top-container" href="/study/circle">
                             <div class="study-top-item-img">
-                                <img src="/images/study_top_1.PNG" width="100%" alt="study001"> 
+                                <video class="study-top-v" src="/videos/study-top-video1.mp4" width="100%" loop muted>
+                                <%# <img src="/images/studytop0.PNG" width="100%" alt="study002">  %>
                             </div> 
                             <div class="study-top-item-txt">
-                                <%# <h1 class="study-top-item-txt-diff">初級</h1> %>
-                                <p>1次関数の最大・最小値がイメージできるような教材をつくってみましょう</p>
+                                <h2 class="study-top-item-txt-diff"><i class="fas fa-draw-polygon"></i>  内接円の作図</h2>
+                                <%# <p>内接円・外接円の作図</p> %>
+                            </div>
+                        </a>
+                        <a class="study-top-container" href="/study/square">
+                            <div class="study-top-item-img">
+                                <video class="study-top-v" src="/videos/study-top-video2.mp4" width="100%" loop muted>
+                                <%# <img src="/images/studytop0.PNG" width="100%" alt="study002">  %>
+                            </div> 
+                            <div class="study-top-item-txt">
+                                <h2 class="study-top-item-txt-diff"><i class="fas fa-draw-polygon"></i>  2つの正方形の教材</h2>
+                            </div>
+                        </a>
+                        <a class="study-top-container" href="/study/beginner">
+                            <div class="study-top-item-img">
+                                <video class="study-top-v" src="/videos/study-top-video3.mp4" width="100%" loop muted>
+                            </div> 
+                            <div class="study-top-item-txt">
+                                <h2 class="study-top-item-txt-diff"><i class="fas fa-draw-polygon"></i>  １次関数の教材</h2>
+                                <%# <p>1次関数の最大・最小値がイメージできるような教材をつくってみましょう</p> %>
                             </div>
                         </a>
                     
-                        <div class="study-top-container">
-                            <div class="study-top-item-img">
-                                <img src="img/study_top_1.PNG" width="100%" alt="study002"> 
-                            </div> 
-                            <div class="study-top-item-txt">
-                                <h1 class="study-top-item-txt-diff">
-                                    準備中
-                                </h1>
-                            </div>
-                        </div>
                     
                         <div class="study-top-container">
                             <div class="study-top-item-img">
@@ -37,4 +46,21 @@
                     </div>
                 </div>
             </div>
-        </main>
+
+<%# <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(.study-top-container).on({
+    mouseenter:function(){
+        $(this).addClass('on');
+        $(this).find('.study-top-v')[0].currentTime = $(this).find('.study-top-v')[0].initialTime || 0;
+        $(this).find('.study-top-v')[0].play();
+    },
+    mouseleave:function(){
+        $(this).removeClass('on');
+        $(this).find('.study-top-v')[0].pause();
+    }
+},'.stage');
+</script> %>
+
+
+</main>
